@@ -12,7 +12,9 @@ The included `setup.sh` will do the following:
 3. Install any required roles for the playbook listed in the `files/requirements.yml` file.
 4. Run the playbook `main.yml` using the `inventory.yml` as its inventory file.
 
-This works great if you curl the script and pipe it to bash (as show in the quick install). This template also has Molecule and Github Actions preconfigured to lint and test the playbook. Local development using Molecule also works
+This works great if you curl the script and pipe it to bash (as show in the quick install). 
+
+This template also has Molecule and Github Actions preconfigured to lint and test the playbook. Local development using Molecule is recommended. We use geerlingsguy docker images so we have full support for creating and restarting services. See [this blogpost](https://www.jeffgeerling.com/blog/2018/testing-your-ansible-roles-molecule) for more info.
 
 Below is some standard text I include in my playbook repositories:
 
