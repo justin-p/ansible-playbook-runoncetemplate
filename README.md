@@ -8,8 +8,8 @@ Perfect for once off configs such as [this](https://github.com/justin-p/ansible-
 The included `setup.sh` will do the following:
 
 1. Install Ansible and all the needed dependencies.
-2. Clone the repository at /tmp/ansible-playbook-template
-3. Install any required roles for the playbook listed in the `files/requirements.yml` file.
+2. Clone the repository at /tmp/ansible-playbook-runoncetemplate
+3. Install any required roles for the playbook lirunoncetemplatested in the `files/requirements.yml` file.
 4. Run the playbook `main.yml` using the `inventory.yml` as its inventory file.
 
 This works great if you curl the script and pipe it to bash ( as show in the quick install).
