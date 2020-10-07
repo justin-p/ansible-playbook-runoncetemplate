@@ -12,9 +12,7 @@ The included `setup.sh` will do the following:
 3. Install any required roles for the playbook listed in the `files/requirements.yml` file.
 4. Run the playbook `main.yml` using the `inventory.yml` as its inventory file.
 
-This works great if you curl the script and pipe it to bash ( as show in the quick install).
-
-This template has Molecule and Github Actions preconfigured to lint and test the playbook.
+This works great if you curl the script and pipe it to bash (as show in the quick install). This template also has Molecule and Github Actions preconfigured to lint and test the playbook. Local development using Molecule also works
 
 Below is some standard text I include in my playbook repositories:
 
@@ -51,6 +49,17 @@ Development requirements:
 - ansible-lint
 
 or simply use a VM with [this](https://github.com/justin-p/ansible-terraform-workstation) configuration.
+
+### Basic molecule usage
+
+- Build a container and apply the current playbook: `molecule converge`  
+Note, when using converge the container is not destoryed, allowing you to quickly test changes by running this command consecutive times.
+
+- Run a the playbook and any included tests against clean containers: `molecule test`
+
+- Apply tests defined in the `verify.yml` file: `molecule verify`
+
+- Remove any containers left over from the converge command: `molecule destroy`
 
 ## License
 
