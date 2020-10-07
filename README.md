@@ -16,7 +16,7 @@ This works great if you curl the script and pipe it to bash ( as show in the qui
 
 This template has Molecule and Github Actions preconfigured to lint and test the playbook.
 
-Below is some standard text I include in my playbook repository
+Below is some standard text I include in my playbook repositories:
 
 ---
 
