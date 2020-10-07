@@ -57,11 +57,14 @@ or simply use a VM with [this](https://github.com/justin-p/ansible-terraform-wor
 - Build a container and apply the current playbook: `molecule converge`  
 Note, when using converge the container is not destoryed, allowing you to quickly test changes by running this command consecutive times.
 
+- Interact with the containers created by molecule: `molecule login`  
+Note, this works great with converge allowing you to peek inside the container and manually check why things didnt work.
+
+- Remove any containers left over from the converge command: `molecule destroy`
+
 - Run a the playbook and any included tests against clean containers: `molecule test`
 
 - Apply tests defined in the `verify.yml` file: `molecule verify`
-
-- Remove any containers left over from the converge command: `molecule destroy`
 
 ## License
 
