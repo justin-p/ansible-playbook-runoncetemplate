@@ -24,7 +24,7 @@ Below is some standard text I include in my playbook repositories:
 
 ### Quick
 
-1. Run `curl https://raw.githubusercontent.com/justin-p/ansible-playbook-runoncetemplate/master/setup.sh | bash`
+1. Run `curl https://raw.githubusercontent.com/justin-p/ansible-playbook-runoncetemplate/main/setup.sh | bash`
 2. Enter sudo password.
 3. Reboot the system.
 
