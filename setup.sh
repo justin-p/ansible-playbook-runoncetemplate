@@ -10,7 +10,7 @@ export PATH=$PATH:/$HOME/.local/bin
 
 echo 'PREPARE [Installing requirements with Ansible-Galaxy.] ********'
 echo ''
-ansible-galaxy install -r /tmp/ansible_playbook_runoncetemplate/files/requirements.yml >/dev/null 2>&1
+ansible-galaxy install -r /tmp/ansible_playbook_runoncetemplate/requirements.yml >/dev/null 2>&1
 echo 'RUN [Running playbook.] ***************************************'
 ansible-playbook /tmp/ansible_playbook_runoncetemplate/main.yml -i /tmp/ansible_playbook_runoncetemplate/inventory.yml
 
