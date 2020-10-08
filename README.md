@@ -14,7 +14,7 @@ The included `setup.sh` will do the following:
 
 This works great if you curl the script and pipe it to bash (as show in the quick install). 
 
-This template also has Molecule and Github Actions preconfigured to lint, deploy and verify the playbook against Ubuntu 20.04 and 18.04 comtainers. For local development using Molecule is also recommended. We use [geerlingguy's](https://github.com/geerlingguy) [docker images](https://ansible.jeffgeerling.com/) so we have full support for creating and restarting services. See [this blogpost](https://www.jeffgeerling.com/blog/2018/testing-your-ansible-roles-molecule) for more info.
+This template also has Molecule and Github Actions preconfigured to lint, deploy and verify the playbook against Ubuntu 20.04 and 18.04 containers. For local development using Molecule is also recommended. We use [geerlingguy's](https://github.com/geerlingguy) [docker images](https://ansible.jeffgeerling.com/) so we have full support for creating and restarting services. See [this blogpost](https://www.jeffgeerling.com/blog/2018/testing-your-ansible-roles-molecule) for more info.
 
 Below is some standard text I include in my playbook repositories:
 
