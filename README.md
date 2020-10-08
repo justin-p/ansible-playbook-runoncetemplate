@@ -9,7 +9,7 @@ The included `setup.sh` will do the following:
 
 1. Install Ansible and all the needed dependencies.
 2. Clone the repository at /tmp/ansible-playbook-runoncetemplate
-3. Install any required roles for the playbook listed in the `files/requirements.yml` file.
+3. Install any required roles for the playbook listed in the `requirements.yml` file.
 4. Run the playbook `main.yml` using the `inventory.yml` as its inventory file.
 
 This works great if you curl the script and pipe it to bash (as show in the quick install). 
@@ -35,7 +35,7 @@ Below is some standard text I include in my playbook repositories:
 3. `sudo apt-get update -y && sudo apt-get install git curl python3 python3-pip`
 4. `pip3 install --user ansible `
 5. `export PATH=$PATH:/$HOME/.local/bin`
-6. `ansible-galaxy install -r files/requirements.yml`
+6. `ansible-galaxy install -r requirements.yml`
 7. `ansible-playbook main.yml -i inventory.yml`
 8. Reboot the system.
 
