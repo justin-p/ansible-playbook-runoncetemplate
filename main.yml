@@ -4,6 +4,6 @@
     ansible_python_interpreter: /usr/bin/python3
   tasks:
     - name: Do Something
-      include: "{{ playbook_dir }}/tasks/some_task.yml"
+      ansible.builtin.include: "{{ playbook_dir }}/tasks/some_task.yml"
 
-- import_playbook: "{{ playbook_dir }}/tasks/roles.yml"
+- ansible.builtin.import_playbook: "{{ playbook_dir }}/tasks/roles.yml"
