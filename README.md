@@ -1,6 +1,6 @@
 # ansible-playbook-runoncetemplate
 
-[![Github Actions](https://img.shields.io/github/workflow/status/justin-p/ansible-playbook-template/CI?label=Github%20Actions&logo=github&style=flat-square)](https://github.com/justin-p/ansible-playbook-runoncetemplate/actions)
+[![Github Actions](https://img.shields.io/github/actions/workflow/status/justin-p/ansible-playbook-runoncetemplate/main.yml?label=Github%20Actions&logo=github&style=flat-square)](https://github.com/justin-p/ansible-playbook-runoncetemplate/actions)
 
 A Ansible template for playbooks that you want to run once on a system using a local version of ansible.
 Perfect for once off configs such as [this](https://github.com/justin-p/ansible-playbook-terraform-workstation) or [this](https://github.com/justin-p/ansible-playbook-my-linux-workstation).
